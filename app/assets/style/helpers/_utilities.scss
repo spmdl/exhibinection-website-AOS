@@ -1,0 +1,149 @@
+$utilities: (
+  "position": (
+    responsive: true,
+    property: position,
+    values: static relative absolute fixed sticky
+  ),
+  "top": (
+    responsive: true,
+    property: top,
+    values: $position-values
+  ),
+  "translate-middle": (
+    responsive: true,
+    property: transform,
+    class: translate-middle,
+    values: (
+      null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%),
+    )
+  ),
+  "width": (
+    responsive: true,
+    property: width,
+    class: w,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+      xs: 36px,
+      s: 120px
+    )
+  ),
+  "max-width": (
+    responsive: true,
+    property: max-width,
+    class: mw,
+    values: (100: 100%)
+  ),
+  "height": (
+    responsive: true,
+    property: height,
+    class: h,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+      xxs: 84px,
+      xs: 120px,
+      s: 256px,
+      m: 350px,
+      l: 400px,
+      xl: 559px
+    )
+  ),
+  "min-viewport-height": (
+    responsive: true,
+    property: min-height,
+    class: min-vh,
+    values: (
+      cart: calc(100vh - 80px),
+      cart-sticky: calc(100vh - 162px),
+      cart-sticky-expand: calc(100vh - 142px),
+      100: 100vh
+    )
+  ),
+  "outline": (
+    property: outline,
+    values: (
+      null: $border-width solid $border-color,
+      0: 0,
+    )
+  ),
+  "border-end": (
+    responsive: true,
+    property: border-right,
+    class: border-end,
+    values: (
+      null: $border-width solid $border-color,
+      0: 0,
+    )
+  ),
+  "font-weight": (
+    responsive: true,
+    property: font-weight,
+    class: fw,
+    values: (
+      light: $font-weight-light,
+      lighter: $font-weight-lighter,
+      normal: $font-weight-normal,
+      medium: 500,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder
+    )
+  ),
+  "font-size": (
+    // rfs: true,
+    responsive: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes
+  ),
+  "text-indent": (
+    property: text-indent,
+    class: text-indent,
+    values: (
+      1: 16px,
+      2: 32px
+    )
+  ),
+  "overflow-x": (
+    responsive: true,
+    state: hover,
+    property: overflow-x,
+    class: overflow-x,
+    values: auto hidden visible scroll
+  ),
+  "z-index": (
+    responsive: true,
+    property: z-index,
+    class: z,
+    values: $z-index,
+  ),
+  "background-attachment": (
+    responsive: true,
+    property: background-attachment,
+    class: bga,
+    values: (
+      scroll: scroll,
+      fixed: fixed,
+      local: local
+    ),
+  ),
+  "object-fit": (
+    responsive: true,
+    property: object-fit,
+    values: (
+      fill: fill,
+      contain: contain,
+      cover: cover,
+      none: none,
+      scale-down: scale-down
+    ),
+  )
+)

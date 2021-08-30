@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+// components
+@import "./components/scrollbar";
+@import "./helpers/background-image";
+@import "./components/progress";
+@import "./components/hover-effect";
 
-@import './layout/index.scss'
+@import "./helpers/base";
